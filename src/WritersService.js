@@ -19,5 +19,8 @@ export default class WritersService{
         const url = `${API_URL}/writers/${pk}`;
         return axios.get(url).then(response => response.data);
     }
-
+    deleteWriter(writer){
+        const url = `${API_URL}/writers/${writer.pk}`;
+        return axios.delete(url);
+    }
 }

@@ -1,68 +1,70 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+<p align="center">
+    <h3 align="center">Simple React API list with tests<br></h3>
+</p>
 
-In the project directory, you can run:
 
-### `yarn start`
+<p align="center">
+  This is a very simple React example of how to list some REST API data.
+  Usually testing process is not included to repos, and for this reason is a bit difficult to find react examples showing tests. So I thought it could be useful for someone to upload them here. Any pull request or comment to improve them or the example will be highly wellcome.  
+  Used Axios for the API requests service.  
+  Used Enzyme, Prototype and some custom helper for testing.
+  The service is pointing a typicode's free mockup service (I intended to make a heroes list, ended up doint a writers one XD) so if it has many calls, typicode may cut it. You can just mock your own data endpoint or use any other REST API.
+</p>
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### Prerequisites
+* You'll need to have [git](https://git-scm.com/) and [node](https://nodejs.org/en/) or yarn (https://yarnpkg.com/) installed in your system.
 
-### `yarn test`
+### To run
+* Fork and clone the project:
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+git clone https://github.com/maria-antignolo/tiny-react-api-list-with-tests.git
+```
 
-### `yarn build`
+* Then install the dependencies:
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+yarn install
+```
+or
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+```
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* Run development server:
 
-### `yarn eject`
+```
+yarn start
+```
+or
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
+npm start
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Open the web browser to `http://localhost:3000/`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### To test
+To run unit tests:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```
+yarn test
+```
+or
 
-## Learn More
+```
+npm test
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### To build the production package
+This is pending
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Eslint
+I shall add some `.eslintrc.js` config for eslint ready with React plugin.
+Pending by now.
 
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+### Contribute
+Please contribute to the project if you know how to make it better, including this README :)
